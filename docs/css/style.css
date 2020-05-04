@@ -44,3 +44,119 @@ body {
 .gallery2{
     display: flex;
 }
+
+.mobile-wrapper{
+    background-image: "phone.png";
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 56.25%;
+    padding: 64px;
+}
+
+.mobile-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 64px;
+}
+
+.mobile-icon{
+    height: 64px;
+    width: 64px;
+    background-color: white;
+    transition: ease-out 1s;
+}
+
+.mobile-icon:hover{
+    height: 64px;
+    width: 64px;
+    background-color: red;
+}
+
+.loading {
+    background-color: grey;
+    width: 1000px;
+    height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 75px;
+}
+
+.loading2 {
+    background-color: limegreen;
+    width: 1000px;
+    height: 50px;
+
+
+
+    animation-name: load;
+    animation-duration: 3000s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes load {
+
+    0% {width: 0px;}
+    1% {width: 50px;}
+    5% {width: 250px;}
+    10% {width: 500px;}
+    20% {width: 750px;}
+    30% {width: 825px;}
+    40% {width: 900px;}
+    50% {width: 936px;}
+    60% {width: 954px;}
+    70% {width: 962px;}
+    80% {width: 964px;}
+    90% {width: 965px;}
+    95% {width: 950px;}
+    100% {width: 0px;}
+
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 450px;
+}
+
+.zoo {
+    animation-name: zoostuff;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoostuff {
+    0% {width: 0px;}
+    25% {width: 500px;}
+    50% {width: 1000px;}
+    75% {width: 1500px;}
+    100% {width: 2000px;}
+}
+
+.zoo2 {
+    animation-name: zoostuff2;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoostuff2 {
+    0% {rotate: 20deg;}
+    25% {rotate: 40deg;}
+    50% {rotate: 60deg;}
+    75% {rotate: 180deg;}
+    100% {rotate: 60deg;}
+}
