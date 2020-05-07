@@ -104,3 +104,13 @@ news {
 .modalclose:hover {
     cursor: pointer;
 }
+
+.modalabout {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+  }
+
+.modalabout:hover {
+    cursor: pointer;
+}
