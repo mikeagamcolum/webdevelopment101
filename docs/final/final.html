@@ -1,5 +1,5 @@
 <html>
-  <link rel="stylesheet" type="text/css" href="../css/animate.css" media="screen"/>
+  <link rel="stylesheet" href="../css/animate.css"/>
   <link rel="stylesheet" type="text/css" href="../css/final_style.css" media="screen"/>
   <link href="https://fonts.googleapis.com/css?family=Overpass:300,900&display=swap" rel="stylesheet">
   <script src="final.js"></script>
@@ -9,6 +9,7 @@
   
   <head>
     <title>Final Project</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="background.png">
     <meta content="">
     <style>
 
@@ -16,7 +17,12 @@
   </head>
   <body>
     <news>error</news>
-  </body>
+    <div class="modal">
+      <p class="modalclose">x</p>
+      <p class="modalheader">Like the service? Send me money!</p>
+      <p>NANO: nano_3mfgx8ypi8tz9ozwo385fgsacuqb9wr3mfdzctiu4gh44cks6rqde1thj88z</p>
+      <p>MONERO: 44ifBw3C8LfFUfQ7xWTPp8Guf1pLEhRW3PQh2KF5TojLiN6eq2dU4Ex49vPT4otQupgvR6dK2gGET8euBYBFqjoY9j3x7Xb</p>
+    </div>
   <script>
     var news = "3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1";
     var feed = ["news", "privacy", "coronavirus", "cryptocurrency", "worldnews", "technology"];
@@ -42,5 +48,9 @@
         }
       });
    }
+   $(".modalclose").click(function(){
+      $(".modal").toggle();
+  })
   </script>
+  </body>
 </html>
